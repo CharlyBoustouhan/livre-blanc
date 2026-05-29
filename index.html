@@ -184,6 +184,11 @@
       border-radius: 8px;
       position: relative;
       overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .stat-card:hover {
+      transform: scale(1.04);
+      box-shadow: 0 8px 28px rgba(44,31,16,0.12);
     }
 
     .stat-card::after {
@@ -279,7 +284,7 @@
       font-size: clamp(1.8rem, 3.5vw, 2.8rem);
       font-weight: 700;
       color: var(--text);
-      margin-bottom: 0.8rem;
+      margin-bottom: 2.5rem;
     }
 
     .leviers-intro {
@@ -613,7 +618,7 @@
 
   <!-- ── POINTS CLÉS ── -->
   <section class="insight-section reveal">
-    <p class="section-label" style="color: var(--orange-light);">Ce que révèle ce livre blanc</p>
+    <p class="section-label" style="color: var(--orange-light);">Dans ce livre blanc</p>
     <h2 class="insight-heading">Le vrai avantage de l'indépendant</h2>
     <div class="insight-grid">
       <div class="insight-card reveal">
@@ -643,8 +648,7 @@
   <section class="leviers-section reveal">
     <p class="section-label">Les 5 leviers d'action</p>
     <h2 class="leviers-heading">Reconquérir les voyageurs,<br>valoriser son territoire</h2>
-    <p class="leviers-intro">Les détails complets de chaque levier sont dans le livre blanc. Voici un aperçu de ce que vous allez découvrir.</p>
-    <div class="leviers-list">
+<div class="leviers-list">
       <div class="levier-item reveal">
         <span class="levier-num">01</span>
         <div class="levier-content">
@@ -699,7 +703,6 @@
   <!-- ── FORMULAIRE ── -->
   <section class="form-section" id="formulaire">
     <div class="form-left reveal">
-      <p class="section-label" style="color: rgba(255,255,255,0.6);">Accès gratuit</p>
       <h2 class="form-heading">Recevez le livre blanc gratuitement</h2>
       <p class="form-desc">31 pages d'analyses, de cas concrets et de leviers actionnables pour que votre hôtel indépendant devienne incontournable dans son territoire.</p>
       <ul class="form-perks">
@@ -742,6 +745,9 @@
   <!-- ── FOOTER ── -->
   <footer>
     <span class="footer-name">Charly Boustouhan</span>
+    <a href="https://www.linkedin.com/in/charly-b-123611207/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.5rem;color:var(--cream);text-decoration:none;opacity:0.75;transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.75">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+    </a>
     <span class="footer-right">© 2026 · Tous droits réservés</span>
   </footer>
 
